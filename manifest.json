@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+
+    "name": "twitter-progressbar-fix",
+    "description": "The new progress bar on twitter doesn't seem to work: You can still send tweets even if it isn't full",
+
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/*", "http://twitter.com/*"],
+            "js": ["progress.js"]
+        }
+    ]
+
+}
